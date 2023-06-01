@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 'sm': '640px',
+'md': '768px',
+'lg': '1024px',
+'xl': '1280px' */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bodyBg: #1B1E23;
+  --containerBg: #16191C;
+  --selectionBg: #b6b6b6;
+  --postBg: #0C0F12;
+  --blue: #60a5fa;
+}
+
+::selection {
+  background: var(--selectionBg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: var(--bodyBg);
+  color: white;
+}
+ 
+nav {
+  width: 100%;
+  heigth: 20vh;
+  padding: 30px 50px;
+  background: transparent;
+}
+
+nav > .links, nav > .bars {
+  position: absolute;
+  right: 10rem;
+  top: 35px;
+  font-weight: 500;
+}
+
+
+.carousel-container {
+  width: 78%;
+  heigth: 40vh;
+  padding: 12px;
+  margin-left: 7rem;
+}
+
+
+
+.post-cards {
+  margin-top: 2rem;
+  margin-left: 7rem;
+}
+
+.post-card {
+  width: 750px;
+  heigth: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  background: var(--postBg);
+  text-align: center;
+}
+
+footer {
+  background: var(--postBg);
+  heigth: 40vh;
+  margin-top: 9rem;
+  padding: 80px;
+  text-align: center;
+}
+
+.just {
+  margin-top: 29rem;
+}
+
+input, textarea {
+  background: var(--containerBg);
+}
+
+.postWidget-container, .categories-container, .author-container {
+  background: var(--containerBg);
+  padding: 30px 35px;
+  min-heigth: 70vh;
+  max-heigth: fit-content;
+  margin-top: 4rem;
+  margin-left: 7rem;
+  width: 50%;
+} 
+
+.bars {
+  display: none;
+}
+
+.responsive-links {
+  background: var(--containerBg);
+  display: block;
+  padding: 50px;
+  width: 100%;
+  heigth: 50vh;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+}
+
+/* ABOUT PAGE */
+
+.general-info {
+  max-width: 800px;
+  left: 10rem;
+}
+
+.part-text {
+  max-width: 800px;
+  font-size: 22px;
+}
+
+.skills {
+  width: 20rem;
+  position: relative;
+  text-align: left;
+  left: 10rem;
+  top: -4rem;
+  font-size: 60px;
+  background: transparent;
+}
+
+.skill {
+  padding: 10px 20px;
+}
+
+.skill-title {
+  color: #fff;
+  font-size: 27px;
+}
+
+
+.skill-tab {
+  background: #000;
+  width: 80%;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.skill-tab-comp {
+  background: var(--blue);
+  height: 9px;
+  border-radius: 10px;
+}
+
+
+.part {
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* CONTACT PAGE */
+
+#contact > form > input, #contact > form > textarea {
+  text-align: left;
+  padding: 18px 40px;
+  boder-radius: 25px;
+  width: 1000px;
+  background: #000;
+  resize: none;
+}
+
+.contact-button {
+  background: #000;
+  border: 1.5px solid var(--blue);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: 550;
+  position: relative;
+  right: 2.2rem;
+  top: 2.5rem;
+}
+
+.contact-button:hover {
+  background: var(--blue);
+  color: black;
+  transition: .6s all;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+  .post-container {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .postWidget-container {
+    width: 700px;
+    position: relative;
+    left: 3rem;
+  }
+  .categories-container {
+    width: 700px;
+    position: relative;
+    left: 3rem;
+    margin-top: 0;
+  }
+  .author-container {
+    margin-top: 3rem;
+    position: relative;
+    left: 3rem;
+    width: 700px;
+  }
+  .post-container {
+    width: 960px;
+    margin-left: -7rem;
+  }
+  .comment-form {
+    width: 800px;
+    margin-left: -4rem;
+  }
+  .bars {
+    display: inline;
+  }
+  .links {
+    display: none;
+  }
+  .general-info, .skills {
+    margin-left: -5rem;
+  }
+  #contact > form > input, #contact > form > textarea {
+    width: 650px;
+  }
+}
+
+
+@media only screen and (max-width: 1020px) {
+  .postWidget-container {
+    width: 500px;
+    position: relative;
+    left: 1rem;
+  }
+  .categories-container {
+    width: 500px;
+    position: relative;
+    left: 1rem;
+    margin-top: 0;
+  }
+  .author-container {
+    margin-top: 3rem;
+    position: relative;
+    left: 1rem;
+    width: 500px;
+  }
+  .post-container {
+    width: 740px;
+    margin-left: -4rem;
+
+  }
+  .comment-form {
+    width: 700px;
+    margin-left: -4rem;
+  }
+  .bars {
+    position: absolute;
+    right: 1rem;
+  }
+  nav {
+    margin-left: -2.5rem;
+  }
+  .post-cards, .carousel-container {
+    margin-left: 5rem;
+  }
+  .general-info, .skills {
+    margin-left: -6rem;
+    width: 500px;
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .postWidget-container {
+    width: 350px;
+    position: relative;
+    left: 1rem;
+  }
+  .categories-container {
+    width: 350px;
+    position: relative;
+    left: 1rem;
+    margin-top: 0;
+  }
+  .author-container {
+    margin-top: 3rem;
+    position: relative;
+    left: 1rem;
+    width: 350px;
+  } 
+  .post-container {
+    width: 560px;
+    margin-left: -1rem;
+
+  }
+  .comment-form {
+    width: 500px;
+    margin-left: -1rem;
+  }
+  nav {
+    margin-left: -5rem;
+  }
+  .logo {
+    font-size: 27px;
+    width: 200px;
+  }
+  .bars {
+    left: 18rem;
+  }
+  .hr {
+    display: none;
+  }
+  .post-cards, .carousel-container {
+    margin-left: 3rem;
+  }
+  .post-card {
+    width: 550px;
+  }
+  .general-info, .skills {
+    margin-left: -7rem;
+    width: 400px;
+  }
+  #contact > form > input, #contact > form > textarea {
+    width: 370px;
+  }
+  
+}
+
+@media only screen and (max-width: 470px) {
+  .postWidget-container {
+    width: 300px;
+    position: relative;
+    left: 2rem;
+  }
+  .categories-container {
+    width: 300px;
+    position: relative;
+    left: 2rem;
+    margin-top: 2rem;
+  }
+  .author-container {
+    margin-top: 3rem;
+    position: relative;
+    left: 1rem;
+    width: 300px;
+  } 
+  .post-container {
+    width: 400px;
+    margin-left: -1rem;
+  }
+  .post-cards {
+    margin-left: 2.5rem;
+  }
+  .bars {
+    left: 15rem;
+  }
+  .comment-form {
+    width: 370px;
+    margin-left: .8rem;
+  }
+  .carousel-container {
+    margin-left: 1.6rem;
+    width: 400px;
+  }
+  .post-card {
+    width: 350px;
+  }
+  footer {
+    width: 450px;
+  }
+  .general-info, .skills {
+    margin-left: -7rem;
+    width: 300px;
+  }
+  #contact > form > input, #contact > form > textarea {
+    width: 320px;
+  }
+}
+
