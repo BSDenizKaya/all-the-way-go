@@ -350,23 +350,23 @@ input, textarea {
   .postWidget-container {
     width: 300px;
     position: relative;
-    left: -5rem;
+    left: -6rem;
   }
   .categories-container {
     width: 300px;
     position: relative;
-    left: -5rem;
+    left: -6rem;
     margin-top: 2rem;
   }
   .author-container {
     margin-top: 3rem;
     position: relative;
-    left: -5rem;
+    left: -6rem;
     width: 300px;
   } 
   .post-container {
     width: 400px;
-    margin-left: -5rem;
+    margin-left: -8rem;
   }
   .post-cards {
     margin-left: 2.5rem;
