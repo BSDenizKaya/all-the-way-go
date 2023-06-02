@@ -256,7 +256,7 @@ input, textarea {
     width: 500px;
     position: relative;
     left: 1rem;
-    margin-top: 0;
+    margin-top: 2rem;
   }
   .author-container {
     margin-top: 3rem;
@@ -294,18 +294,18 @@ input, textarea {
   .postWidget-container {
     width: 350px;
     position: relative;
-    left: 1rem;
+    left: -1rem;
   }
   .categories-container {
     width: 350px;
     position: relative;
-    left: 1rem;
-    margin-top: 0;
+    left: -1rem;
+    margin-top: 2rem;
   }
   .author-container {
     margin-top: 3rem;
     position: relative;
-    left: 1rem;
+    left: -1rem;
     width: 350px;
   } 
   .post-container {
@@ -350,26 +350,30 @@ input, textarea {
   .postWidget-container {
     width: 300px;
     position: relative;
-    left: 2rem;
+    left: -4rem;
   }
   .categories-container {
     width: 300px;
     position: relative;
-    left: 2rem;
+    left: -4rem;
     margin-top: 2rem;
   }
   .author-container {
     margin-top: 3rem;
     position: relative;
-    left: 1rem;
+    left: -4rem;
     width: 300px;
   } 
   .post-container {
     width: 400px;
-    margin-left: -1rem;
+    margin-left: -3rem;
   }
   .post-cards {
     margin-left: 2.5rem;
+  }
+  .logo {
+    font-size: 21px;
+    width: 200px;
   }
   .bars {
     left: 15rem;
